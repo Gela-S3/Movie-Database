@@ -1,0 +1,57 @@
+
+
+body{
+    background-color: rgb(27, 10, 40);
+}
+
+.logo-size{
+    height: 120px;
+}
+.font-size-12{
+    font-size: 12px;
+}
+
+.heading{
+    font-size: 45px;
+}
+
+.input-field{
+    outline: none;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 3px;
+    background-color: #8E50FD;
+    color: white;
+}
+.input-field::placeholder{
+    color: #d7c3f9;
+}
+
+.search-button{
+    /* height: 60px; */
+    font-size: 20px; 
+    border-radius: 3px;
+    background-color: #8E50FD;
+    color: #d7c3f9;
+    border: none;
+}
+
+.heading-color{
+    color: #c09cff;
+}
+
+.movie-card{
+    height: 230px;
+    width: auto;
+}
+
+.card-bg{
+    background-color: #342551;
+}
+
+.text-overflow{ 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-clamp: 1;
+}
