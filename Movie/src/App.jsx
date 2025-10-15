@@ -5,7 +5,6 @@ import Single from './component/Single';
 import Navbar from './component/Navbar';
 import './App.css';
 
-
 const App = () => {
   const url = "http://www.omdbapi.com/?apikey=e9b7fc46&";
 
@@ -14,7 +13,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element = {<Home />}></Route>
-        <Route path ="/single" element = {<Single />}></Route>
+        <Route path ="/single/:id" element = {<Single />}></Route>
       </Routes>
     </Router>
   );

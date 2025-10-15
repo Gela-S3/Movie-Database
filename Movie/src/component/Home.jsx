@@ -1,5 +1,6 @@
 import React, { use, useEffect } from 'react';
 import axios from 'axios';
+import { NavLink } from 'react-router-dom';
 
 
 const Home = () => {
@@ -14,7 +15,7 @@ const Home = () => {
       const { data } = await axios.get(`http://www.omdbapi.com/?apikey=e9b7fc46&s=${searchKeyword}`);
       if (data?.Response == "True") {
         setMovieAllData(data?.Search);
-        setMovieAllData(true)
+        setIsDataAvailable(true)
       }
       if (data?.Response == "False") {
 
@@ -63,7 +64,8 @@ const Home = () => {
         <div className="row px-4 my-5 row-gap-4 gap-3 justify-content-between ">
           {isDataAvailable ?movieAllData?.map((movie) => {
               return (
-                <div className="col-2" key={movie.imdbID}>
+                <div className="col-2" key={movie?.imdbID}>
+                  <NavLink  className={"text-decoration-none" } to={`/single/${movie?.imdbID}`}>
                   <div className='card-bg rounded'>
                     <div>
                       <img src={movie?.Poster} alt="movie-cart" className='movie-card p-2 pb-0' />
@@ -72,6 +74,7 @@ const Home = () => {
                       <p className='heading-color fs-5 text-center m-0 text-overflow px-2'>{movie?.Title}</p>
                     </div>
                   </div>
+                  </NavLink>
                 </div>
 
               )
