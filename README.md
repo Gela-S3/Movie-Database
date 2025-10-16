@@ -107,6 +107,6 @@ http://localhost:5173
 
 ### 🧑‍💻 Author
 
-    Gelagay Getahun(Backend & Frontend Developer)
-        📧 gela.sirta3@gmail.com
-        🐙 https://github.com/Gela-S3
+#### Gelagay Getahun(Backend & Frontend Developer)
+#####    📧 gela.sirta3@gmail.com
+#####    🐙 https://github.com/Gela-S3
