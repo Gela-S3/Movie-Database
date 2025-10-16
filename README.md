@@ -32,7 +32,6 @@ Users can search for movies, explore detailed information, and navigate between 
 
 public/
 ├── assets/                # Images, logos, icons
-
 src/
 ├── component/
 │   ├── Home.jsx            # Search and pagination page
